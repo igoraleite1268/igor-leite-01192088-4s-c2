@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastarC">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informe a raça"
+        android:id="@+id/raca"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informe preço medio"
+        android:id="@+id/preco"
+        app:layout_constraintTop_toBottomOf="@+id/raca"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="indicado para crianças ?"
+        android:id="@+id/indicador"
+        app:layout_constraintTop_toBottomOf="@+id/preco"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cadastrar"
+        android:id="@+id/bt_cadastro"
+        app:layout_constraintTop_toBottomOf="@+id/indicador"
+        android:onClick="cadastro"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
